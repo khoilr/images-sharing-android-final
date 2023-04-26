@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/take_picture"
+        android:icon="@drawable/round_photo_camera_24"
+        android:title="@string/take_a_picture" />
+    <item
+        android:id="@+id/choose_from_gallery"
+        android:icon="@drawable/round_photo_library_24"
+        android:title="@string/choose_a_picture_from_gallery" />
+</menu>

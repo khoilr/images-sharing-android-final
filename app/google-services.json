@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "892622640557",
+    "project_id": "android-final-e7d61",
+    "storage_bucket": "android-final-e7d61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892622640557:android:bb165d7827b1db1fbefd24",
+        "android_client_info": {
+          "package_name": "com.khoilr.finalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0e47YuZLnKu_mYsXhWg4q1KUgm2ynCBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

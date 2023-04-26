@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Final</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="home">Home</string>
+    <string name="gallery">Gallery</string>
+    <string name="profile">Profile</string>
+    <string name="floating_action_button">Floating action button</string>
+    <string name="menu">Menu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_registry">Login / Registry</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="view_and_share_images_from_around_the_world">View and share images from around the world</string>
+    <string name="dog">Dog</string>
+    <string name="search_bar">Search bar</string>
+    <string name="no_image">No image</string>
+    <string name="there_is_1_image">There is 1 image</string>
+    <string name="there_are_n_images">There are %1$d images</string>
+    <string name="search_images">Search images</string>
+    <string name="image_sharing">Image sharing</string>
+    <string name="sign_out">Sign out</string>
+    <string name="save">Save</string>
+    <string name="display_name">Display name</string>
+    <string name="take_a_picture">Take a picture</string>
+    <string name="choose_a_picture_from_gallery">Choose a picture from gallery</string>
+    <string name="uploaded_by">Uploaded by %1$s</string>
+</resources>
