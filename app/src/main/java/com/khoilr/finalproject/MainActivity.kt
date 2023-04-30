@@ -57,9 +57,10 @@ class MainActivity : AppCompatActivity() {
 			when (item.itemId) {
 				// Handle the home item click
 				R.id.home -> {
-					dummyImages { images ->
+					getImagesFromFirebase { images ->
 						replaceFragment(ImagesGridFragment(images))
 					}
+//					replaceFragment(ImagesGridFragment(getDummyImages()))
 					true
 				}
 				// Handle the gallery item click
@@ -147,7 +148,7 @@ class MainActivity : AppCompatActivity() {
 		}
 	}
 
-	private fun dummyImages(callback: (MutableList<ImageItem>) -> Unit) {
+	private fun getImagesFromFirebase(callback: (MutableList<ImageItem>) -> Unit) {
 		val imageItems = mutableListOf<ImageItem>()
 		val collection = firestore.collection("images")
 		collection.addSnapshotListener { query, exception ->
@@ -177,6 +178,22 @@ class MainActivity : AppCompatActivity() {
 			}
 			callback(imageItems)
 		}
+	}
+
+	private fun getDummyImages(): MutableList<ImageItem> {
+		val randomHeights = (1..100).map { (250..450).random() }
+		val randomWidths = (1..100).map { (250..450).random() }
+
+		val randomImages = mutableListOf<ImageItem>()
+		for (i in 0..99) {
+			randomImages.add(
+				ImageItem(
+					"https://picsum.photos/${randomWidths[i]}/${randomHeights[i]}",
+					"Image $i"
+				)
+			)
+		}
+		return randomImages
 	}
 
 	private fun permissionRequest() {
