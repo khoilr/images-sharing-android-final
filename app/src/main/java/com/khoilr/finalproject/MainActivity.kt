@@ -57,10 +57,10 @@ class MainActivity : AppCompatActivity() {
 			when (item.itemId) {
 				// Handle the home item click
 				R.id.home -> {
-					getImagesFromFirebase { images ->
-						replaceFragment(ImagesGridFragment(images))
-					}
-//					replaceFragment(ImagesGridFragment(getDummyImages()))
+//					getImagesFromFirebase { images ->
+//						replaceFragment(ImagesGridFragment(images))
+//					}
+					replaceFragment(ImagesGridFragment(getDummyImages()))
 					true
 				}
 				// Handle the gallery item click
